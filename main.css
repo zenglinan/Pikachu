@@ -15,7 +15,35 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+#buttonWrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+span.control {
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 248, 250);
+  outline: 2px solid white;
+  display: inline-flex;
+  width: 70px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .4s;
+  margin: 0 10px;
+}
+span.control:hover {
+  background-color: rgb(226,230,234);
+}
+span.control.active {
+  background-color: rgba(0, 123, 255, .8);
+  color: white;
+}
 .show,
 #codeWrapper {
   width: 100%;
