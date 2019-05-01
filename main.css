@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 1s;
+}
+@media (max-width: 320px){
+  .face {
+      zoom: 0.67; 
+  }
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.show,
+#codeWrapper {
+  width: 100%;
+  height: 50vh;
+  overflow: auto;
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show .face {
+  height: 186px;
+  width: 476px;
+  position: relative;
+}
