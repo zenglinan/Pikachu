@@ -143,7 +143,7 @@
             console.log(1);
             window.clearInterval(timer);
           }
-        }, 0)
+        }, 20)
     }
   }
   controller.init(view);
