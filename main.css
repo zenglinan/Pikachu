@@ -3,7 +3,7 @@
   padding: 0;
   transition: all 1s;
 }
-@media (max-width: 320px){
+@media (max-width: 476px){
   .face {
       zoom: 0.67; 
   }
