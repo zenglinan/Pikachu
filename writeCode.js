@@ -132,20 +132,18 @@
       this.view = view
       this.writeCode('', this.cssCode)
     },
-    writeCode(preCode, code, callback) {
+    writeCode(preCode, code) {
       let codeIndex = 0;
-      if (codeIndex >= code.length) {
-        clearInterval(timer);
-      }
-      else {
         let timer = setInterval(() => {
           this.view.innerHTML = code.slice(0, codeIndex);
           codeStyle.innerHTML = code.slice(0, codeIndex);
           this.view.scrollTop = this.view.scrollHeight;
           codeIndex += 1;
-          callback && callback();
-        }, 20)
-      }
+          if (codeIndex >= code.length) {
+            console.log(1);
+            window.clearInterval(timer);
+          }
+        }, 0)
     }
   }
   controller.init(view);
